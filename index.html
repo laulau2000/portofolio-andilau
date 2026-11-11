@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio pribadi Andi Lau - Fullstack Developer, Network Engineer, dan Desainer." />
+  <title>Andi Lau — Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Latar dekoratif -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <!-- Navigasi -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container">
+      <a href="#home" class="brand">
+        <span class="brand-mark">AL</span>
+        <span class="brand-name">Andi Lau</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Beranda</a></li>
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#education" class="nav-link">Pendidikan</a></li>
+        <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+        <li><a href="#skills" class="nav-link">Kemampuan</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="pill">Tersedia untuk kolaborasi</span>
+          <h1 class="hero-title">
+            Halo, saya <span class="gradient-text">Andi Lau</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span class="typed" id="typed"></span>
+          </p>
+          <p class="hero-desc">
+            Pribadi yang humoris dan mampu bekerja sama dengan tim maupun individu.
+            Lulusan S1 Ilmu Komputer dengan fokus Sistem Informasi, berpengalaman
+            di bidang IT Support, jaringan, dan pengembangan perangkat lunak.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+            <a href="#experience" class="btn btn-ghost">Lihat Pengalaman</a>
+          </div>
+          <ul class="hero-contacts">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:081274096898">0812 7409 6898</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Pangkalpinang, Indonesia</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-card glass">
+            <div class="hero-photo-wrap">
+              <div class="hero-avatar" aria-hidden="true">AL</div>
+              <img
+                class="hero-photo"
+                src="lau.jpeg"
+                alt="Foto profil Andi Lau"
+                onerror="this.style.display = 'none'"
+              />
+              <div class="photo-shade"></div>
+              <div class="photo-caption">
+                <span class="photo-status">Terbuka untuk peluang</span>
+                <h3>Andi Lau</h3>
+                <p class="hero-role">Fullstack Developer &amp; IT Support</p>
+              </div>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-num" data-count="4">0</span>
+                <span class="stat-label">Tahun Pengalaman</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="5">0</span>
+                <span class="stat-label">Keahlian Utama</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="2">0</span>
+                <span class="stat-label">Perusahaan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Gulir ke bawah">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Tentang -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">Tentang</span>
+          <h2 class="section-title">Kenalan Lebih Dekat</h2>
+          <p class="section-sub">Sekilas tentang siapa saya dan bagaimana saya bekerja.</p>
+        </header>
+
+        <div class="about-grid">
+          <article class="card about-quote reveal">
+            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6.83v-6.83H5.5A1.67 1.67 0 0 1 7.17 9.5V6zm10 0A5.17 5.17 0 0 0 12 11.17V18h6.83v-6.83H15.5A1.67 1.67 0 0 1 17.17 9.5V6z"/></svg>
+            <p>
+              “Hallo, Perkenalkan nama saya <strong>Andi Lau</strong>, saya
+              mempunyai pribadi yang humoris dan bisa bekerjasama
+              dengan tim maupun individu. Jenjang pendidikan
+              terakhir saya adalah S1 Ilmu Komputer di ISB Atma Luhur
+              Pangkalpinang dengan program studi Sistem Informasi.”
+            </p>
+            <footer class="quote-footer">— Andi Lau</footer>
+          </article>
+
+          <div class="about-facts">
+            <div class="card fact reveal">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div>
+                <h4>Latar Belakang</h4>
+                <p>Sarjana Ilmu Komputer, program studi Sistem Informasi.</p>
+              </div>
+            </div>
+            <div class="card fact reveal">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h4>Kerja Sama Tim</h4>
+                <p>Nyaman berkolaborasi dalam tim maupun bekerja secara mandiri.</p>
+              </div>
+            </div>
+            <div class="card fact reveal">
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <div>
+                <h4>Solutif &amp; Teknis</h4>
+                <p>Menguasai pengembangan aplikasi, jaringan, dan desain.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pendidikan -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">Pendidikan</span>
+          <h2 class="section-title">Riwayat Pendidikan</h2>
+          <p class="section-sub">Fondasi akademik yang membentuk keahlian saya.</p>
+        </header>
+
+        <div class="edu-card card reveal">
+          <div class="edu-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <div class="edu-top">
+              <h3>Institut Sains dan Bisnis Atma Luhur</h3>
+              <span class="badge-time">2017 — 2021</span>
+            </div>
+            <p class="edu-loc">Pangkalpinang</p>
+            <div class="edu-meta">
+              <span class="chip">S1 Ilmu Komputer</span>
+              <span class="chip">Program Studi Sistem Informasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">Pengalaman</span>
+          <h2 class="section-title">Pengalaman Kerja</h2>
+          <p class="section-sub">Perjalanan karier profesional saya.</p>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <span class="badge-time">2022 — 2026</span>
+              <h3>IT Support</h3>
+              <p class="timeline-company">PT Permodalan Nasional Madani</p>
+              <p class="timeline-desc">
+                Menangani dukungan teknis perangkat, troubleshooting sistem,
+                pemeliharaan jaringan, serta memastikan operasional TI berjalan
+                lancar dan minim gangguan.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <span class="badge-time">2016 — 2017</span>
+              <h3>Sales Marketing</h3>
+              <p class="timeline-company">PD Teguh Nugraha</p>
+              <p class="timeline-desc">
+                Menjalankan aktivitas pemasaran dan penjualan, membangun hubungan
+                baik dengan pelanggan, serta mencapai target penjualan yang
+                ditetapkan perusahaan.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kemampuan -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-tag">Kemampuan</span>
+          <h2 class="section-title">Keahlian &amp; Kompetensi</h2>
+          <p class="section-sub">Bidang yang saya kuasai dan tekuni.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card card reveal">
+            <div class="skill-icon icon-dev">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </div>
+            <h3>Fullstack Developer</h3>
+            <p>Membangun aplikasi web dari sisi front-end hingga back-end.</p>
+          </article>
+
+          <article class="skill-card card reveal">
+            <div class="skill-icon icon-net">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 14V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8M6 18h.01M10 18h.01"/></svg>
+            </div>
+            <h3>Network Engineer</h3>
+            <p>Konfigurasi, pemeliharaan, dan troubleshooting jaringan komputer.</p>
+          </article>
+
+          <article class="skill-card card reveal">
+            <div class="skill-icon icon-canva">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            </div>
+            <h3>Canva Design</h3>
+            <p>Membuat materi desain grafis, konten, dan presentasi yang menarik.</p>
+          </article>
+
+          <article class="skill-card card reveal">
+            <div class="skill-icon icon-affinity">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20M2 12h20"/></svg>
+            </div>
+            <h3>Affinity Design</h3>
+            <p>Desain vektor dan tata letak profesional untuk kebutuhan branding.</p>
+          </article>
+
+          <article class="skill-card card reveal">
+            <div class="skill-icon icon-office">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+            </div>
+            <h3>Microsoft Office</h3>
+            <p>Mengelola dokumen, data, dan presentasi kerja secara efisien.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card card reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <span class="section-tag">Kontak</span>
+          <h2 class="section-title">Mari Terhubung</h2>
+          <p class="section-sub">
+            Terbuka untuk peluang kerja, kolaborasi proyek, maupun sekadar berdiskusi.
+          </p>
+          <div class="contact-actions">
+            <a href="tel:081274096898" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Telepon
+            </a>
+            <a href="https://wa.me/6281274096898" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.83 2.41a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.25 8.24-1.47 0-2.91-.39-4.16-1.14l-.3-.18-3.11.82.83-3.04-.19-.31a8.16 8.16 0 0 1-1.25-4.35c0-4.54 3.7-8.28 8.19-8.28zm-3.6 4.4c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.02 2.6.13.17 1.76 2.75 4.27 3.75.6.23 1.06.37 1.42.48.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.16-.48-.29-.25-.12-1.48-.73-1.71-.81-.23-.09-.4-.13-.56.12-.17.25-.65.81-.79.98-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.55-1.36-.77-1.86-.2-.48-.4-.42-.56-.42l-.42-.01z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Andi Lau. Seluruh hak cipta dilindungi.</p>
+      <a href="#home" class="to-top" aria-label="Kembali ke atas">↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
